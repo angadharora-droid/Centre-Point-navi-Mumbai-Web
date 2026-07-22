@@ -6,6 +6,7 @@ import Home from './pages/Home'
 import Accommodation from './pages/Accommodation'
 import DiningPage from './pages/DiningPage'
 import AmenitiesPage from './pages/AmenitiesPage'
+import Foints from './pages/Foints'
 import Gallery from './pages/Gallery'
 import Contact from './pages/Contact'
 import SimplePage from './pages/SimplePage'
@@ -31,6 +32,7 @@ export default function App() {
           <Route path="/accommodation" element={<Accommodation />} />
           <Route path="/dining" element={<DiningPage />} />
           <Route path="/amenities" element={<AmenitiesPage />} />
+          <Route path="/foints" element={<Foints />} />
           <Route path="/gallery" element={<Gallery />} />
           <Route path="/contact" element={<Contact />} />
           <Route

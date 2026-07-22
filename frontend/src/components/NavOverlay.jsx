@@ -21,7 +21,7 @@ const columns = [
   },
   {
     title: 'Foints Loyalty Program',
-    to: '/contact',
+    to: '/foints',
     links: []
   },
   {

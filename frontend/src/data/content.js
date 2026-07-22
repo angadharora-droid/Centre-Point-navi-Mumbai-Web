@@ -16,6 +16,7 @@ import gallery4 from '../assets/images/gallery-4.jpg'
 import gallery5 from '../assets/images/gallery-5.jpg'
 import gallery6 from '../assets/images/gallery-6.jpg'
 import tripadvisorIcon from '../assets/images/tripadvisor.svg'
+import foinsQr from '../assets/images/foints-qr.png'
 
 export const images = {
   logo,
@@ -30,7 +31,8 @@ export const images = {
   gallery4,
   gallery5,
   gallery6,
-  tripadvisor: tripadvisorIcon
+  tripadvisor: tripadvisorIcon,
+  foinsQr
 }
 
 export const bookingUrl =
@@ -135,3 +137,22 @@ export const stats = [
 export const galleryImages = [gallery1, gallery2, gallery3, gallery4, gallery5, gallery6, room1, room2, dining1, aboutImg]
 
 export const factSheetUrl = '/downloads/centre-point-navi-mumbai-fact-sheet.pdf'
+
+export const foinsRestaurants = [
+  'Meeting Point',
+  'Freakk De Bistro',
+  'Bougainvillea',
+  'Pablo — The Art Café & Lounge',
+  'High Steaks Poolside',
+  'CORE — Spa, Salon & Gym',
+  'Centre Point Navi Mumbai',
+  "Micky's by CP Food",
+  'Dali — The Art Café',
+  'Centre Point Nagpur'
+]
+
+export const foinsPrivileges = [
+  'Preference in all our events, festivals and offers',
+  'Exclusive offers throughout the year',
+  'Bonus Foints for referee and new members as well'
+]
