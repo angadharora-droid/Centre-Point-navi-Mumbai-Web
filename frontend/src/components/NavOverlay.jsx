@@ -7,17 +7,20 @@ const columns = [
   {
     title: 'Rooms',
     to: '/accommodation',
-    links: ['Premium Twin Bedroom', 'Club Master Bedroom']
+    links: [
+      { label: 'Premium Twin Bedroom', to: '/accommodation' },
+      { label: 'Club Master Bedroom', to: '/accommodation' }
+    ]
   },
   {
     title: 'Dining',
     to: '/dining',
-    links: ['Bougainvillea']
+    links: [{ label: 'Bougainvillea', to: '/dining' }]
   },
   {
     title: 'Facilities',
     to: '/amenities',
-    links: ['Amenities']
+    links: [{ label: 'Amenities', to: '/amenities' }]
   },
   {
     title: 'Foints Loyalty Program',
@@ -27,7 +30,10 @@ const columns = [
   {
     title: 'Other',
     to: '/gallery',
-    links: ['Gallery', 'Contact Us']
+    links: [
+      { label: 'Gallery', to: '/gallery' },
+      { label: 'Contact Us', to: '/contact' }
+    ]
   }
 ]
 
@@ -74,7 +80,7 @@ export default function NavOverlay({ open, onClose }) {
             <Link to={col.to} onClick={onClose}><h4>{col.title}</h4></Link>
 
             {col.links && col.links.map((link) => (
-              <Link key={link} to={col.to} onClick={onClose}>{link}</Link>
+              <Link key={link.label} to={link.to} onClick={onClose}>{link.label}</Link>
             ))}
             {col.title === 'Other' && (
               <a href={careersUrl} target="_blank" rel="noreferrer" onClick={onClose}>Careers</a>
