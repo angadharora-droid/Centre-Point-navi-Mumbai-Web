@@ -1,0 +1,76 @@
+.dining-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+}
+
+.dining-card {
+  position: relative;
+  min-width: 0;
+  aspect-ratio: 4 / 3.3;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: flex-end;
+}
+
+.dining-card-overlay {
+  position: relative;
+  width: 100%;
+  padding: 20px;
+  background: linear-gradient(180deg, rgba(0,0,0,0) 40%, rgba(0,0,0,0.72) 100%);
+}
+
+.dining-card-overlay h3 {
+  color: #fff;
+  font-size: 21px;
+  margin-bottom: 14px;
+}
+
+.dining-card-desc {
+  color: #f2f2f2;
+  font-size: 14px;
+  font-family: var(--font-body);
+  margin-bottom: 16px;
+  max-width: 480px;
+}
+
+.dining-card-actions {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.dining-card-actions .btn {
+  padding: 9px 18px;
+  font-size: 12px;
+  text-transform: none;
+  letter-spacing: 0;
+  font-family: var(--font-body);
+}
+
+@media (min-width: 640px) {
+  .dining-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1080px) {
+  .dining-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.dining-grid.is-single {
+  grid-template-columns: 1fr;
+}
+
+.dining-grid.is-single .dining-card {
+  aspect-ratio: 4 / 3.3;
+}
+
+@media (min-width: 640px) {
+  .dining-grid.is-single .dining-card {
+    aspect-ratio: 21 / 9;
+  }
+}

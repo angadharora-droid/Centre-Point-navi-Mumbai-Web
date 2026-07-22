@@ -1,0 +1,106 @@
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: var(--color-cream);
+}
+
+.header-inner {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  align-items: center;
+  height: 90px;
+}
+
+.header-inner .brand {
+  justify-self: center;
+}
+
+.header-inner .header-actions {
+  justify-self: end;
+}
+
+.brand img {
+  height: 48px;
+  width: auto;
+}
+
+.hamburger {
+  width: 26px;
+  height: 18px;
+  background: transparent;
+  border: none;
+  position: relative;
+  padding: 0;
+}
+
+.hamburger span {
+  display: block;
+  height: 1.5px;
+  background: var(--color-text);
+  margin: 5px 0;
+}
+
+.header-actions {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.hotline {
+  position: relative;
+}
+
+.hotline-toggle {
+  background: none;
+  border: none;
+  font-family: var(--font-body);
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: var(--color-text);
+  display: none;
+  align-items: center;
+  gap: 4px;
+}
+
+.chevron {
+  font-size: 15px;
+}
+
+.hotline-panel {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  margin-top: 14px;
+  background: #fff;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+  padding: 16px 22px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  min-width: 220px;
+  border-radius: 4px;
+}
+
+.hotline-panel a {
+  font-family: var(--font-body);
+  font-size: 14px;
+  color: var(--color-text);
+  white-space: nowrap;
+}
+
+.hotline-panel a:hover {
+  color: var(--color-primary);
+}
+
+.header-actions .btn {
+  padding: 12px 22px;
+}
+
+@media (min-width: 640px) {
+  .hotline-toggle {
+    display: inline-flex;
+  }
+}
