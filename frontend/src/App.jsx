@@ -4,6 +4,8 @@ import Header from './components/Header'
 import Footer from './components/Footer'
 import Home from './pages/Home'
 import Accommodation from './pages/Accommodation'
+import PremiumTwinBedroom from './pages/PremiumTwinBedroom'
+import ClubMasterBedroom from './pages/ClubMasterBedroom'
 import DiningPage from './pages/DiningPage'
 import AmenitiesPage from './pages/AmenitiesPage'
 import Foints from './pages/Foints'
@@ -30,6 +32,8 @@ export default function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/accommodation" element={<Accommodation />} />
+          <Route path="/accommodation/premium-twin-bedroom" element={<PremiumTwinBedroom />} />
+          <Route path="/accommodation/club-master-bedroom" element={<ClubMasterBedroom />} />
           <Route path="/dining" element={<DiningPage />} />
           <Route path="/amenities" element={<AmenitiesPage />} />
           <Route path="/foints" element={<Foints />} />

@@ -17,6 +17,21 @@ import gallery5 from '../assets/images/gallery-5.jpg'
 import gallery6 from '../assets/images/gallery-6.jpg'
 import tripadvisorIcon from '../assets/images/tripadvisor.svg'
 import foinsQr from '../assets/images/foints-qr.png'
+import twinDetail1 from '../assets/images/twin-detail-1.jpg'
+import twinDetail2 from '../assets/images/twin-detail-2.jpg'
+import twinDetail3 from '../assets/images/twin-detail-3.jpg'
+import twinDetail4 from '../assets/images/twin-detail-4.jpg'
+import twinDetail5 from '../assets/images/twin-detail-5.jpg'
+import clubDetail1 from '../assets/images/club-detail-1.jpg'
+import clubDetail2 from '../assets/images/club-detail-2.jpg'
+import clubDetail3 from '../assets/images/club-detail-3.jpg'
+import clubDetail4 from '../assets/images/club-detail-4.jpg'
+import iconLaundry from '../assets/images/icon-laundry.svg'
+import iconConcierge from '../assets/images/icon-concierge.svg'
+import iconSafe from '../assets/images/icon-safe.png'
+import iconTea from '../assets/images/icon-tea.png'
+import iconPool from '../assets/images/icon-pool.svg'
+import iconGym from '../assets/images/icon-gym.svg'
 
 export const images = {
   logo,
@@ -32,8 +47,19 @@ export const images = {
   gallery5,
   gallery6,
   tripadvisor: tripadvisorIcon,
-  foinsQr
+  foinsQr,
+  twinDetail: [twinDetail1, twinDetail2, twinDetail3, twinDetail4, twinDetail5],
+  clubDetail: [clubDetail1, clubDetail2, clubDetail3, clubDetail4]
 }
+
+export const roomAmenityIcons = [
+  { name: 'Express Laundry', icon: iconLaundry },
+  { name: '24 Hour Room Service', icon: iconConcierge },
+  { name: 'In Safe Locker', icon: iconSafe },
+  { name: 'Tea & Coffee Making Facilities', icon: iconTea },
+  { name: 'Rooftop Swimming Pool', icon: iconPool },
+  { name: 'Gym & Spa', icon: iconGym }
+]
 
 export const bookingUrl =
   'https://app.axisrooms.com/beV2/searchHotel.html?paxInfo=2%7C0%7C%7C&allHotels=true&newBe=true&productId=167209&bookingEngineId=4807&rooms=1&searchId=-1&searchNumber=1'
@@ -57,6 +83,7 @@ export const rooms = [
   {
     name: 'Premium Twin Bedroom',
     tag: 'Premium',
+    to: '/accommodation/premium-twin-bedroom',
     img: room1,
     desc: 'Sleek, spacious twin-bed rooms with modern interiors, a workstation, and high-speed WiFi — built for the diligent business traveler.',
     size: '305 Sq Ft · Max Occupancy 2 Adults'
@@ -64,6 +91,7 @@ export const rooms = [
   {
     name: 'Club Master Bedroom',
     tag: 'Club',
+    to: '/accommodation/club-master-bedroom',
     img: room2,
     desc: 'An elegant master bedroom with a cozy lounge sofa, perfect for relaxing after a long day or entertaining guests in comfort.',
     size: '255 Sq Ft · Max Occupancy 2 Adults'

@@ -8,8 +8,8 @@ const columns = [
     title: 'Rooms',
     to: '/accommodation',
     links: [
-      { label: 'Premium Twin Bedroom', to: '/accommodation' },
-      { label: 'Club Master Bedroom', to: '/accommodation' }
+      { label: 'Premium Twin Bedroom', to: '/accommodation/premium-twin-bedroom' },
+      { label: 'Club Master Bedroom', to: '/accommodation/club-master-bedroom' }
     ]
   },
   {

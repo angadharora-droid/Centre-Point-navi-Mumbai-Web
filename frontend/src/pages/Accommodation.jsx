@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import PageHeader from '../components/PageHeader'
 import { rooms, images, bookingUrl } from '../data/content'
 import './ListingPage.css'
@@ -17,11 +18,11 @@ export default function Accommodation() {
           <div className="listing-grid">
             {rooms.map((room) => (
               <div className="listing-card" key={room.name}>
-                <div className="listing-card-img">
+                <Link to={room.to} className="listing-card-img">
                   <img src={room.img} alt={room.name} />
-                </div>
+                </Link>
                 <div className="listing-card-body">
-                  <h3>{room.name}</h3>
+                  <h3><Link to={room.to}>{room.name}</Link></h3>
                   <p className="listing-desc-italic">{room.desc}</p>
                   <p className="listing-size">{room.size}</p>
                   <a href={bookingUrl} target="_blank" rel="noreferrer" className="btn btn-primary">Book Now</a>

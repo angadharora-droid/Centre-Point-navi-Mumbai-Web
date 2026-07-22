@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import { Link } from 'react-router-dom'
 import { rooms, bookingUrl } from '../data/content'
 import './Stay.css'
 
@@ -30,11 +31,11 @@ export default function Stay() {
         <div className="stay-grid">
           {filtered.map((room) => (
             <div className="room-card" key={room.name}>
-              <div className="room-card-img">
+              <Link to={room.to} className="room-card-img">
                 <img src={room.img} alt={room.name} />
-              </div>
+              </Link>
               <div className="room-card-body">
-                <h3>{room.name}</h3>
+                <h3><Link to={room.to}>{room.name}</Link></h3>
                 <p className="room-desc">{room.desc}</p>
                 <p className="room-size">{room.size}</p>
                 <a href={bookingUrl} target="_blank" rel="noreferrer" className="btn btn-primary">Book Now</a>
