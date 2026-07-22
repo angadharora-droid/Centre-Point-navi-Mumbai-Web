@@ -29,7 +29,6 @@ export default function Diaries() {
           ))}
         </div>
       </div>
-      <hr className="section-divider" />
     </section>
   )
 }
